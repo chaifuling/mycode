@@ -1,6 +1,7 @@
 
 // 观察者模式   事件发布 --- 订阅
 
+// es6 写法
 class Events {
     constructor() {
         this.map = new Map()
@@ -38,7 +39,7 @@ class Events {
 
 };
 
-
+// es5 写法
 function Eventloop() {
     this.eventobj = {};
 
