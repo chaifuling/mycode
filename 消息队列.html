@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>消息队列</title>
+  </head>
+  <body>
+      <div>
+        页面上有三个按钮，分别为 A、B、C，点击各个按钮都会发送异步请求且互不影响，每次请求回来的数据都为按钮的名字。
+        
+        请实现当用户依次点击 A、B、C、A、C、B 的时候，最终获取的数据为 ABCACB。</div>
+    <button>A</button>
+    <button>B</button>
+    <button>C</button>
+  </body>
+
+  <script>
+    Array.from(document.getElementsByTagName("button")).forEach(
+      (item, index) => {
+        item.onclick = function () {
+          messageQueue(item);
+        };
+      }
+    );
+    function messageQueue(e) {
+      var text = e.innerText;
+      new Promise((resolve) => {
+        resolve(text);
+      }).then((res) => console.log(res));
+    }
+  </script>
+</html>
+
