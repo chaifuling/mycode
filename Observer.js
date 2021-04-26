@@ -37,7 +37,7 @@ Object.defineProperty(car, 'price', {
 
 
 // 源码位置：src/core/observer/dep.js
-class Dep {
+export class Dep {
   constructor() {
     this.subs = []
   }
@@ -77,7 +77,7 @@ function remove(arr, item) {
 }
 
 
-class Observer {
+export class Observer {
 
   constructor(props) {
     this.props = props;
