@@ -1,7 +1,7 @@
 // Object的变化时通过setter来追踪的，只有某个数据发生了变化，
 // 就一定会触发这个数据上的setter。但是Array型数据没有setter
 // 可以把这些方法都重写一遍，在不改变原有功能的前提, 监听数组 如下
-import { Dep, Dep as dep } from "./Observer";
+import {  Dep as dep } from "./Observer";
 
 let arr = [1, 2, 3];
 arr.push(4);
