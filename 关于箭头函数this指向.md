@@ -20,19 +20,19 @@ w:改底层(滑稽)
 
 Z:es2021没你我不学@W
 
-![image-20210428230745411](/Users/caifuling/Library/Application Support/typora-user-images/image-20210428230745411.png)
+![image-20210428230745411](./img/image-20210428230745411.png)
 
 于是我上图了  证明结果  是的 没错改不动 但是我就想 那既然改不动儿子 那就改爸爸 ， 毕竟儿子跟着爸爸走 ~！！
 
 
 
-![image-20210428230946236](/Users/caifuling/Library/Application Support/typora-user-images/image-20210428230946236.png)
+![image-20210428230946236](./img/image-20210428230946236.png)
 
 好家伙 跟着他爸爸走了~~
 
 实际上看下箭头函数的定义我们就知道了
 
-![image-20210428231031692](/Users/caifuling/Library/Application Support/typora-user-images/image-20210428231031692.png)
+![image-20210428231031692](./img/image-20210428231031692.png)
 
 箭头函数与他第一个不为箭头函数的父类this强相关，父类的this运行时才能确定，父类运行的时候，父类运行，确定了this，并且也定义了箭头函数。
 
